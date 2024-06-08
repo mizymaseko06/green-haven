@@ -24,6 +24,34 @@
                 </div>
             </div>
         </section>
+        <section id="menu-preview">
+            <div class="container">
+                <h4 class="text-center mt-5">MENU</h4>
+                <p class="display-6 text-center">Our picks for today</p>
+                <div class="row card-deck justify-content-center mb-5">
+                    <?php
+                    for ($i = 0; $i < 6; $i++) {
+                    ?>
+                        <article class="card col-10 col-md-6 col-lg-3 m-3">
+                            <div class="card-img-top">
+                                <img src="../assets/images/lefteris-kallergis-_TLKIVSW6Do-unsplash.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body text-center">
+                                <p class="card-title">Veggie Burger</p>
+                                <p class="card-text">E129.99</p>
+                                <div class="qty-container">
+                                    <span>-</span>
+                                    <span>3</span>
+                                    <span>+</span>
+                                </div>
+                                <a href="" class="btn btn-primary action-btn w-100">Add to cart</a>
+                            </div>
+                        </article>
+                    <?php }
+                    ?>
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
