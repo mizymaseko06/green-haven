@@ -3,13 +3,13 @@ body {
     --black: #000000;
 }
 
-#hero {
+#hero, #menu-preview {
     height: 100vh;
     z-index: 1;
     position: relative;
 }
 
-#hero-bg {
+#hero-bg, #menu-preview-bg {
     height: 100vh;
     width: 100%;
     object-fit: cover;

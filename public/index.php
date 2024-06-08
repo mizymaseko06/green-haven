@@ -24,6 +24,8 @@
                 </div>
             </div>
         </section>
+
+        <img id="menu-preview-bg" src="../assets/images/menu-background.png" alt="">
         <section id="menu-preview">
             <div class="container">
                 <h4 class="text-center mt-5">MENU</h4>
