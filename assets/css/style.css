@@ -26,3 +26,7 @@ body {
     color: var(--black);
     border: 0;
 }
+
+#reviews{
+    background-color: var(--light-green);
+}
