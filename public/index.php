@@ -25,12 +25,11 @@
             </div>
         </section>
 
-        <img id="menu-preview-bg" src="../assets/images/menu-background.png" alt="">
         <section id="menu-preview">
-            <div class="container">
-                <h4 class="text-center mt-5">MENU</h4>
+            <div class="container border-3">
+                <h4 class="text-center" style="z-index: 1;">MENU</h4>
                 <p class="display-6 text-center">Our picks for today</p>
-                <div class="row card-deck justify-content-center mb-5">
+                <div class="row card-deck justify-content-center">
                     <?php
                     for ($i = 0; $i < 6; $i++) {
                     ?>
@@ -57,7 +56,7 @@
 
         <section id="reviews">
             <div class="container">
-                <h4 class="text-center mt-5 text-light">REVIEWS</h4>
+                <h4 class="text-center mt-5">REVIEWS</h4>
                 <p class="display-6 text-center">What others have to say</p>
                 <div class="row card-deck">
                     <?php
