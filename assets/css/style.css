@@ -9,7 +9,7 @@ body {
     position: relative;
 }
 
-#menu-preview {
+#menu-preview, #menu {
     min-height: 100vh;
     z-index: 1;
     background-image: url("../images/menu-background.png");
