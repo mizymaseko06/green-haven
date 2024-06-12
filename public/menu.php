@@ -1,5 +1,6 @@
 <?php
-    include ("../includes/db_connect.php")
+include("../includes/db_connect.php");
+include("../includes/menu_items.php");
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +16,6 @@
             <div class="container">
                 <h4 class="text-center" style="z-index: 1;">MENU</h4>
                 <p class="display-6 text-center">What the chef has prepared for today</p>
-
                 <div>
                     <ul class="nav nav-tabs bg-light" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
@@ -49,15 +49,15 @@
                 </div>
                 <div class="row card-deck mt-5">
                     <?php
-                    for ($i = 0; $i < 6; $i++) {
+                    foreach ($menu_items as $menu_item) {
                     ?>
                         <article class="card col-8 col-md-4 col-lg-3">
                             <div class="card-img-top">
                                 <img src="../assets/images/lefteris-kallergis-_TLKIVSW6Do-unsplash.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="card-body text-center">
-                                <p class="card-title">Veggie Burger</p>
-                                <p class="card-text">E129.99</p>
+                                <p class="card-title"> <?php echo $menu_item['item_name'] ?> </p>
+                                <p class="card-text"><?php echo $menu_item['price'] ?></p>
                                 <div class="qty-container">
                                     <span>-</span>
                                     <span>3</span>
