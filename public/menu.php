@@ -38,36 +38,72 @@ include("../includes/menu_items.php");
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">...</div>
-                        <div class="tab-pane fade" id="starters" role="tabpanel" aria-labelledby="starters-tab">...</div>
-                        <div class="tab-pane fade" id="main" role="tabpanel" aria-labelledby="main-tab">...</div>
-                        <div class="tab-pane fade" id="sides" role="tabpanel" aria-labelledby="sides-tab">...</div>
-                        <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">...</div>
-                        <div class="tab-pane fade" id="beverages" role="tabpanel" aria-labelledby="beverages-tab">...</div>
+                        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                            <div class="row card-deck mt-5">
+                                <?php
+                                foreach ($menu_items as $menu_item) {
+                                    include("../includes/generate_item.php");
+                                }
+                                ?>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="starters" role="tabpanel" aria-labelledby="starters-tab">
+                            <div class="row card-deck mt-5">
+                                <?php
+                                foreach ($menu_items as $menu_item) {
+                                    if ($menu_item['category'] == 1) {
+                                        include("../includes/generate_item.php");
+                                    }
+                                }
+                                ?>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="main" role="tabpanel" aria-labelledby="main-tab">
+                            <div class="row card-deck mt-5">
+                                <?php
+                                foreach ($menu_items as $menu_item) {
+                                    if ($menu_item['category'] == 2) {
+                                        include("../includes/generate_item.php");
+                                    }
+                                }
+                                ?>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="sides" role="tabpanel" aria-labelledby="sides-tab">
+                            <div class="row card-deck mt-5">
+                                <?php
+                                foreach ($menu_items as $menu_item) {
+                                    if ($menu_item['category'] == 3) {
+                                        include("../includes/generate_item.php");
+                                    }
+                                }
+                                ?>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+                            <div class="row card-deck mt-5">
+                                <?php
+                                foreach ($menu_items as $menu_item) {
+                                    if ($menu_item['category'] == 4) {
+                                        include("../includes/generate_item.php");
+                                    }
+                                }
+                                ?>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="beverages" role="tabpanel" aria-labelledby="beverages-tab">
+                            <div class="row card-deck mt-5">
+                                <?php
+                                foreach ($menu_items as $menu_item) {
+                                    if ($menu_item['category'] == 5) {
+                                        include("../includes/generate_item.php");
+                                    }
+                                }
+                                ?>
+                            </div>
+                        </div>
                     </div>
 
-                </div>
-                <div class="row card-deck mt-5">
-                    <?php
-                    foreach ($menu_items as $menu_item) {
-                    ?>
-                        <article class="card col-8 col-md-4 col-lg-3">
-                            <div class="card-img-top">
-                                <img src="../assets/images/lefteris-kallergis-_TLKIVSW6Do-unsplash.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="card-body text-center">
-                                <p class="card-title"> <?php echo $menu_item['item_name'] ?> </p>
-                                <p class="card-text"><?php echo $menu_item['price'] ?></p>
-                                <div class="qty-container">
-                                    <span>-</span>
-                                    <span>3</span>
-                                    <span>+</span>
-                                </div>
-                                <a href="" class="btn btn-primary action-btn w-100">Add to cart</a>
-                            </div>
-                        </article>
-                    <?php }
-                    ?>
                 </div>
             </div>
             </div>
