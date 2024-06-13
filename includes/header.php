@@ -8,7 +8,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md container">
-            <a href="" class="navbar-brand"><img src="../assets/images/green-haven-logo.png" alt=""></a>
+            <a href="index.php" class="navbar-brand"><img src="../assets/images/green-haven-logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#NavigationMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>

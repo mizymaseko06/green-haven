@@ -5,11 +5,11 @@
     <div class="card-body text-center">
         <p class="card-title"> <?php echo $menu_item['item_name'] ?> </p>
         <p class="card-text"><?php echo $menu_item['price'] ?></p>
-        <div class="qty-container">
+        <!-- <div class="qty-container">
             <span>-</span>
             <span>3</span>
             <span>+</span>
-        </div>
+        </div> -->
         <a href="" class="btn btn-primary action-btn w-100">Add to cart</a>
     </div>
 </article>

@@ -1,3 +1,7 @@
+<?php
+include("../includes/db_connect.php");
+include("../includes/menu_items.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,24 +30,30 @@
                 <p class="display-6 text-center">Our picks for today</p>
                 <div class="row card-deck justify-content-center">
                     <?php
-                    for ($i = 0; $i < 6; $i++) {
+                    $i = 0;
+                    foreach ($menu_items as $preview_item) {
                     ?>
                         <article class="card col-10 col-md-6 col-lg-3 m-3">
                             <div class="card-img-top">
                                 <img src="../assets/images/lefteris-kallergis-_TLKIVSW6Do-unsplash.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="card-body text-center">
-                                <p class="card-title">Veggie Burger</p>
-                                <p class="card-text">E129.99</p>
-                                <div class="qty-container">
+                                <p class="card-title"> <?php echo ($preview_item['item_name']) ?> </p>
+                                <p class="card-text"><?php echo ($preview_item['price']) ?> </p>
+                                <!-- <div class="qty-container">
                                     <span>-</span>
                                     <span>3</span>
                                     <span>+</span>
-                                </div>
+                                </div> -->
                                 <a href="" class="btn btn-primary action-btn w-100">Add to cart</a>
                             </div>
                         </article>
-                    <?php }
+                    <?php
+                        $i += 1;
+                        if ($i == 6) {
+                            break;
+                        }
+                    }
                     ?>
                 </div>
             </div>
