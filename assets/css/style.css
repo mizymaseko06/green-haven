@@ -1,6 +1,15 @@
 body {
     --light-green: #C7DA05;
     --black: #000000;
+    height: 100vh;
+    z-index: 1;
+    background-image: url("../images/menu-background.png");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header{
+    background-color: #FFFFFF;
 }
 
 #hero {
@@ -9,12 +18,12 @@ body {
     position: relative;
 }
 
-#menu-preview, #menu {
+/* #menu-preview, #menu {
     min-height: 100vh;
     z-index: 1;
     background-image: url("../images/menu-background.png");
     background-size: cover;
-}
+} */
 
 #hero-bg {
     height: 100vh;
